@@ -1,0 +1,33 @@
+{
+  "Title": "a50933_Nuno Carvalho - Tarefa 1",
+  "Type": "game",
+  "Org": "pipelinestudios",
+  "Ident": "a50933_tarefa1",
+  "Tags": null,
+  "Schema": 1,
+  "HasAssets": true,
+  "AssetsPath": "",
+  "ResourcePaths": [],
+  "HasCode": true,
+  "CodePath": "/code/",
+  "Metadata": {
+    "MaxPlayers": 64,
+    "MinPlayers": 1,
+    "GameNetworkType": "Multiplayer",
+    "MapSelect": "Official",
+    "MapList": [
+      "lake"
+    ],
+    "RankType": "None",
+    "PerMapRanking": false,
+    "LeaderboardType": "None",
+    "ProjectTemplate": null,
+    "CsProjName": "",
+    "ControlModes": {
+      "Keyboard": true
+    },
+    "Summary": "",
+    "Description": "",
+    "Public": false
+  }
+}
