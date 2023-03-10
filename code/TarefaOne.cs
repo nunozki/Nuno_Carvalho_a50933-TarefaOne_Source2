@@ -21,8 +21,11 @@ public partial class TarefaOne : GameManager
 		cl.Pawn?.Delete();
 
 		var player = new SwimmingPlayer();
-
 		cl.Pawn = player;
+
+		var clothing = new ClothingContainer();
+		clothing.LoadFromClient( cl );
+		clothing.DressEntity( player );
 
 		var allSpawnPoints = Entity.All.OfType<SpawnPoint>();
 		var randomSpawnPoint = allSpawnPoints.OrderBy( spawnPoint => spawnPoint.Position.Distance( Vector3.Zero ) ).FirstOrDefault();

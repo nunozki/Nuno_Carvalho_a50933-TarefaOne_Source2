@@ -34,11 +34,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "B:\\S&box Projects\\TarefaOne\\code\\a50933_tarefa1.csproj",
+      "projectUniqueName": "B:\\S&box Projects\\Nuno_Carvalho_a50933-TarefaOne_Source2\\code\\a50933_tarefa1.csproj",
       "projectName": "a50933_tarefa1",
-      "projectPath": "B:\\S&box Projects\\TarefaOne\\code\\a50933_tarefa1.csproj",
+      "projectPath": "B:\\S&box Projects\\Nuno_Carvalho_a50933-TarefaOne_Source2\\code\\a50933_tarefa1.csproj",
       "packagesPath": "C:\\Users\\nunom\\.nuget\\packages\\",
-      "outputPath": "B:\\S&box Projects\\TarefaOne\\code\\obj\\",
+      "outputPath": "B:\\S&box Projects\\Nuno_Carvalho_a50933-TarefaOne_Source2\\code\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
