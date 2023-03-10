@@ -13,7 +13,7 @@
 		align-items: center;
 	}
 	gameText {
-		font-size: @(Math.Sin(Time.Now) * 60);
+		font-size: 60;
 		color: white;
 		font-family: Poppins;
 		font-weight: 600;
@@ -23,12 +23,23 @@
 </style>
 
 <root>
-	<panel class="gameText">
-		Welcome to my S&box game!
-	</panel>
 </root>
 
 @code {
+	[Event("DisplayText")]
+	public void Displaytext(string text)
+	{
+		var label = AddChild<Label>("gameText");
+		label.SetText(text);
+		DeleteAsync(label, 1500);
+	}
+
+	public async void DeleteAsync(Panel panel, int time)
+	{
+		await GameTask.Delay(time);
+		panel.Delete();
+	}
+
 	protected override int BuildHash()
 	{
 		return HashCode.Combine(Time.Now);

@@ -40,4 +40,10 @@ public partial class TarefaOne : GameManager
 
 		player.Position = randomSpawnPoint.Position;
 	}
+
+	[ClientRpc]
+	public static void DisplayGameText(string text)
+	{
+		Event.Run( "DisplayText", text );
+	}
 }

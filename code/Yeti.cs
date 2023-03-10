@@ -43,7 +43,10 @@ namespace TarefaOne
 			animationHelper.WithVelocity( Velocity / Scale );
 
 			if ( Position.Distance( Victim.Position ) <= 30f )
+			{
+				TarefaOne.DisplayGameText( To.Single(Victim.Client), "YOU GOT EATEN!" );
 				TarefaOne.Reset( Victim.Client );
+			}
 		}
 	}
 }
