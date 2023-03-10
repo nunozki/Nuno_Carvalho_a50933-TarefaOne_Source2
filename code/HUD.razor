@@ -1,0 +1,36 @@
+﻿@using Sandbox;
+@using System;
+@using Sandbox.UI;
+
+@namespace TarefaOne
+@inherits RootPanel
+
+<style>
+	HUD {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	gameText {
+		font-size: @(Math.Sin(Time.Now) * 60);
+		color: white;
+		font-family: Poppins;
+		font-weight: 600;
+		bottom: 150px;
+		text-stroke: 5px black;
+	}
+</style>
+
+<root>
+	<panel class="gameText">
+		Welcome to my S&box game!
+	</panel>
+</root>
+
+@code {
+	protected override int BuildHash()
+	{
+		return HashCode.Combine(Time.Now);
+	}
+}

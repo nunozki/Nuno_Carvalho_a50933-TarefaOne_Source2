@@ -10,6 +10,14 @@ namespace TarefaOne;
 public partial class TarefaOne : GameManager
 {
 	public static float LakeRadius = 512f;
+
+	public TarefaOne() 
+	{ 
+		if(Game.IsClient) 
+		{
+			new HUD();
+		}
+	}
 	public override void ClientJoined( IClient cl )
 	{
 		base.ClientJoined( cl );
